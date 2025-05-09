@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-purple-100 flex flex-wrap items-center justify-center h-screen gap-6  p-4">
+    <div class="bg-gray-300 p-6 rounded-xl shadow-xl text-center max-w-md ">
+        <h2 class="text-xl font-bold mb-4 text-purple-700"> Random Quote </h2>
+        <p id="quote" class="text-gray-700 italic mb-4"> Click the button to get inspired </p>
+        <button onclick="newQuote()" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition"> New Quote </button>
+    </div>
+
+    <div class="bg-yellow-300 p-6 rounded-xl shadow-xl text-center max-w-md">
+        <h2 class="text-xl font-bold mb-4 text-green-700"> Random Quote </h2>
+        <p id="quotes" class="text-gray-700 italic mb-4"> Click the button to get inspired </p>
+        <button onclick="newQuotes()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition"> New Quote </button>
+    </div>
+
+    <div class="bg-green-300 p-6 rounded-xl shadow-xl text-center max-w-md">
+        <h2 class="text-xl font-bold mb-4 text-yellow-700"> Random Quote </h2>
+        <p id="quotes1" class="text-gray-700 italic mb-4"> Click the button to get inspired </p>
+        <button onclick="newQuotes1()" class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition"> New Quote </button>
+    </div>
+
+
+    <script>
+        const quote = [
+            "Believe in yourself.",
+            "You are stronger than you think.",
+            "Every day is a new beginning.",
+            "Do what makes your soul shine.",
+            "Push yourself, no one else will."
+        ];
+        const quotes = [
+            "Focus on your dreams.",
+            "The best way to predict the future is to create it.",
+            "Do one thing every day that scares you.",
+            "Success is not in what you have, but who you are."
+            
+        ];
+        const quote1 = [
+            "Focus on your dreams.",
+            "Dream big and dare to fail.",
+            "Don't watch the clock; do what it does. Keep going.",
+            "A bridge between goals and accomplishment go ahead."
+        
+        ];
+
+        function newQuote() {
+            const random = quote[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").textContent = random;
+        }
+
+        function newQuotes() {
+            const random = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quotes").textContent = random;
+        }
+
+        function newQuotes1() {
+            const random = quote1[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quotes1").textContent = random;
+        }
+    </script>
+</body>
+</html>

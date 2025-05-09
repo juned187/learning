@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+        .red-box {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .blue-box {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+        width: 10%;
+        padding: 7px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="red-box">
+            <h2>Red Box</h2>
+            <p class="text-yellow-500 dark:text-yellow-400">This is a red box. It's inside a container.</p>
+        </div>
+        <div class="blue-box">
+            <h2>Blue Box</h2>
+            <p class="text-green-500 dark:text-green-400">This is a blue box. It's also inside the container</p>
+        </div>
+    </div>
+
+    <form>
+        <input name="name" placeholder="Name" type="text"><br>
+        <input name="name" placeholder="Email" type="text"><br>
+        <input name="name" placeholder="Password" type="text"><br>
+        <button>Register</button>
+    </form>
+
+    <ol type="a">
+        <li >Apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+    </ol>
+
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+    </ul>
+
+    <form>
+        <input name="name" placeholder="Email" type="text"><br>
+        <input name="name" placeholder="Password" type="text"><br>
+        <button>Submit</button>
+    </form>
+
+    <table border="2">
+        <tr>
+            <td>Student Name</td>
+            <td>Math Grade</td>
+            <td>Science Grade</td>
+            <td>English Grade</td>
+        </tr>
+        <tr>
+            <td>Juned</td>
+            <td>95</td>
+            <td>89</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Naved</td>
+            <td>97</td>
+            <td>87</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female<br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="Coding">Coding
+        <input type="checkbox" name="hobby" value="Music">Music<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pg2tsJErYH4?si=8t9eXPvfswAb6_X2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>Intro to the website.</p>
+        </section>
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Related links</p>
+        </aside>
+    </main>
+    <footer>Copyright 2025</footer>
+
+    <h1 class="text-xl font-medium text-black dark:text-white">My Awesome Website</h1>
+    <p class="text-gray-500 dark:text-gray-400">Welcome to my website! Check out this cool image:</p>
+    <img src="img/img1.png" alt="Placeholder image" width="200" height="150" align="right">
+    <p>This image is aligned to the right and has a width of 200 pixels and height of 150 pixels.</p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-yellow-500 shadow p-4 flex justify-between items-center"> 
+        <h1 class="text-xl font-bold"> Shopping Zone </h1>
+    
+        
+        <nav class="space-x-4"> 
+            <a href="#home" class="hover:text-red-500 font-semibold text-xl"> Home </a>
+            <a href="#shop" class="hover:text-red-500 font-semibold text-xl"> Shop </a>
+            <a href="#cart" class="hover:text-red-500 font-semibold text-xl"> Cart </a> 
+        </nav>
+        
+        <div class="flex items-center space-x-2">
+            <input type="text" placeholder="Search products" class="border border-gray-300 rounded px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">Search</button>
+        </div>
+    </header>
+    
+    <div class="max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-6">
+        <!--Product Image-->
+        <img src="img/img3.jpg" alt="Product" class="rounded shadow">
+
+        <!--Product Info-->
+        <div>
+            <h1 class="text-2xl font-bold mb-2">Camera</h1>
+            <p class="text-gray-600 mb-4">New brand camera</p>
+            <p class="text-xl font-semibold mb-4">$189.99</p>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-6">
+        <!--Product Image-->
+        <img src="img/img4.jpg" alt="Product" class="rounded shadow">
+
+        <!--Product Info-->
+        <div>
+            <h1 class="text-2xl font-bold mb-2">Cool Sneakers</h1>
+            <p class="text-gray-600 mb-4">Comfortable and stylish shoes for daily wear.</p>
+            <p class="text-xl font-semibold mb-4">$89.99</p>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-6">
+        <!--Product Image-->
+        <img src="img/img5.jpg" alt="Product" class="rounded shadow">
+
+        <!--Product Info-->
+        <div>
+            <h1 class="text-2xl font-bold mb-2">Shirt</h1>
+            <p class="text-gray-600 mb-4">Winter shirt</p>
+            <p class="text-xl font-semibold mb-4">$25.99</p>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+    </div>
+    
+</body>
+</html>

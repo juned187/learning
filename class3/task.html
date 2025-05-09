@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-4 rounded shadow w-full max-w-md">
+        <h1 class="text-xl font-bold mb-4 text-center">Task Manager</h1>
+
+        <div class="flex mb-3">
+            <input id="taskInput" type="text" placeholder="Enter a task" class="flex-1 border px-3 py-2 rounded-1 focus:outline-none">
+            <buttonn id="addBtn" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600">Add</button>
+        </div>
+
+        <ul id="taskList" class="space-y-2"></ul>
+    </div>
+
+    <script>
+        const taskInput = document.getElementById("taskInput");
+        const addBtn = document.getElementById("addBtn");
+        const taskList = document.getElementById("taskList");
+
+        addBtn.addEventListener("click" , () =>{
+            const text = taskInput.value.trim();
+            if (text === "")return;
+
+            const li = document.createElement
+        })
+    </script>
+</body>
+</html>

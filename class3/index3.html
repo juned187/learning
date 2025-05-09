@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-blue-900 min-h-screen flex items-center justify-center p-6">
+    <!-- Header -->
+    <header class="w-full bg-gradient-to-br from-blue-100 to-gray-700 shadow-md py-4 px-6 fixed top-0 left-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-800">Fruit & Veggie Store</h1>
+            <nav>
+            <ul class="flex space-x-6 text-gray-700 font-medium">
+                <li><a href="#" class="hover:text-blue-600 transition font-bold">Home</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition font-bold">Products</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition font-bold">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Spacer to offset fixed header -->
+<div class="h-20"></div>
+    
+    
+    <div class="max-w-4xl w-full bg-white/80 backdrop-blur-lg p-8 rounded-xl shadow-xl border border-gray-200">
+        <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-8 tracking-tight">Shopping Cart</h1>
+
+        <!-- Product List -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Apple" data-price="10">
+                <img src="img/apple.jpg" alt="Apple" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Apple</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$10</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Banana" data-price="5">
+                <img src="img/banana2.png" alt="Banana" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Banana</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$5</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Orange" data-price="8">
+                <img src="img/orange2.png" alt="Orange" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Orange</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$8</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Grapes" data-price="20">
+                <img src="img/grapes.jpg" alt="Grapes" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Grapes</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$20</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Mango" data-price="12">
+                <img src="img/mango.jpg" alt="Mango" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Mango</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$12</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Watermelon" data-price="15">
+                <img src="img/watermelon.jpg" alt="Watermelon" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Watermelon</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$15</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Onion" data-price="18">
+                <img src="img/onion.jpg" alt="Onion" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Onion</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$18</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Potato" data-price="15">
+                <img src="img/potato.jpg" alt="Potato" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Potato</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$15</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Cabbage" data-price="12">
+                <img src="img/cabbage.jpg" alt="Cabbage" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Cabbage</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$12</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Tomato" data-price="10">
+                <img src="img/tomato.jpg" alt="Tomato" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Tomato</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$10</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Brinjal" data-price="8">
+                <img src="img/brinjal.jpg" alt="Brinjal" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Brinjal</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$8</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition transform hover:scale-105" data-name="Ladyfinger" data-price="10">
+                <img src="img/ladyfinger.jpg" alt="Ladyfinger" class="w-full h-48 object-cover rounded-1g">
+                <h2 class="text-1g font-semibold mt-2 text-gray-700 text-center">Lady Finger</h2>
+                <p class="text-gray-600 text-center text-sm">Price:<span class="font-bold">$10</span></p>
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-1g w-full font-medium hover:bg-blue-700 transition add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 flex item-center">
+                Cart
+                <span id="cart-count" class="ml-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full hidden">0</span>
+            </h2>
+            <ul id="cart-item" class="bg-white p-4 rounded-1g shadow-md mt-4 max-h-52 overflow-y-auto border border-gray-200"></ul>
+
+            <div class="text-right mt-4">
+                <h3 class="text-xl font-semibold">Total: <span class="text-gray-900 font-bold">$</span><span id="total-price">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cartItem = document.getElementById("cart-item");
+        const totalPriceE1 = document.getElementById("total-price");
+        const cartCount = document.getElementById("cart-count");
+        let totalPrice = 0;
+        let itemCount = 0;
+
+        document.querySelectorAll(".add-to-cart").forEach(button =>{
+            button.addEventListener("click", function () {
+                const product = this.parentElement;
+                const name = product.getAttribute("data-name");
+                const price = parseFloat(product.getAttribute("data-price"));
+
+                // Create cart item
+                const li = document.createElement("li");
+                li.classList.add("flex","justify-between","item-center","border-b","py-2","px-3","rounded-1g","bg-white","shadow-sm","border");
+                li.innerHTML =`
+                    <span class="font-semibold text-gray-700">${name} - $${price}</span>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded-1g hover:bg-red-600 transition remove-item"> Remove</button>
+                `;
+
+                // Add remove functionality
+                li.querySelector(".remove-item").addEventListener("click", function () {
+                    li.remove();
+                    totalPrice -= price;
+                    itemCount --;
+                    totalPriceE1.textContent = totalPrice.toFixed(2);
+                    cartCount.textContent = itemCount;
+                    if (itemCount === 0) cartCount.classList.add("hidden");
+                });
+
+                // Append to cart
+                cartItem.appendChild(li);
+
+                // Update total price and item count
+                totalPrice += price;
+                itemCount++;
+                totalPriceE1.textContent = totalPrice.toFixed(2);
+                cartCount.textContent = itemCount;
+                cartCount.classList.remove("hidden");
+            });
+        });   
+        
+    </script>
+</body>
+</html>
