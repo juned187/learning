@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Task App</title>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="bg-white p-4 rounded shadow w-full max-w-md">
+    <div class="bg-gradient-to-br from-blue-100 to-gray-700 p-4 rounded shadow w-full max-w-md">
         <h1 class="text-xl font-bold mb-4 text-center">Task Manager</h1>
 
         <div class="flex mb-3">
@@ -26,7 +27,27 @@
             const text = taskInput.value.trim();
             if (text === "")return;
 
-            const li = document.createElement
+            const li = document.createElement("li");
+            li.className = "flex justify-between items-center bg-gray-200 px-3 py-2 rounded";
+
+            const span = document.createElement("span");
+            span.textContent = text;
+
+            const delBtn = document.createElement("button");
+            delBtn.textContent = "X";
+            delBtn.className = "text-red-500 font-bold hover:text-red-700";
+            delBtn.onclick = () => li.remove();
+
+            li.append(span , delBtn);
+            taskList.appendChild(li);
+
+            taskInput.value = "";
+            taskInput.focus();
+        });
+
+        // Optional: Add task by pressing "Enter"
+        taskInput.addEventListener("keydown" , e=> {
+            if (e.key === "Enter") addBtn.click();
         })
     </script>
 </body>
